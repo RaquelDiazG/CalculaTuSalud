@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">CalculaTuSalud</string>
     <string name="txt_imc">Índice de masa corporal (IMC)</string>
-    <string name="txt_peso">Peso ideal</string>
+    <string name="txt_peso_ideal">Peso ideal</string>
     <string name="txt_metabolismo">Metabolismo basal (MB)</string>
     <string name="txt_calorias">Gasto calórico diario</string>
+    <string name="txt_peso">Peso (kg)</string>
+    <string name="txt_estatura">Estatura (cm)</string>
+    <string name="txt_edad">Edad (años)</string>
+    <string name="txt_sexo_hombre">Hombre</string>
+    <string name="txt_sexo_mujer">Mujer</string>
+    <string name="txt_calcular">Calcular</string>
 </resources>

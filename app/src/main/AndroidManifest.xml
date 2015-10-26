@@ -34,7 +34,7 @@
         </activity>
         <activity
             android:name=".PesoActivity"
-            android:label="@string/txt_peso"
+            android:label="@string/txt_peso_ideal"
             android:parentActivityName=".PrincipalActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
