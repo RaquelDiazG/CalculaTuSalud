@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="es.upm.miw.calculatusalud" >
 
     <application
@@ -8,20 +9,44 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name=".PrincipalActivity" >
+        <activity
+            android:name=".PrincipalActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".IMCActivity" >
+        <activity
+            android:name=".IMCActivity"
+            android:label="@string/txt_imc"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
         </activity>
-        <activity android:name=".MetabolismoActivity" >
+        <activity
+            android:name=".MetabolismoActivity"
+            android:label="@string/txt_metabolismo"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
         </activity>
-        <activity android:name=".PesoActivity" >
+        <activity
+            android:name=".PesoActivity"
+            android:label="@string/txt_peso"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
         </activity>
-        <activity android:name=".CaloriasActivity" >
+        <activity
+            android:name=".CaloriasActivity"
+            android:label="@string/txt_calorias"
+            android:parentActivityName=".PrincipalActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PrincipalActivity" />
         </activity>
     </application>
 
