@@ -11,8 +11,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="es.upm.miw.calculatusalud.CaloriasActivity"
-    android:weightSum="1">
+    tools:context="es.upm.miw.calculatusalud.CaloriasActivity">
 
     <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/radio_group_sexo"
@@ -43,7 +42,7 @@
 
     <EditText
         android:id="@+id/input_peso"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -57,7 +56,7 @@
 
     <EditText
         android:id="@+id/input_estatura"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -71,7 +70,7 @@
 
     <EditText
         android:id="@+id/input_edad"
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
@@ -79,7 +78,7 @@
 
     <Spinner
         android:id="@+id/actividad_fisica_spinner"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/actividad_fisica_array"/>
 
@@ -93,9 +92,7 @@
 
     <TextView
         android:id="@+id/resultado"
-        android:layout_width="86dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.21" />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

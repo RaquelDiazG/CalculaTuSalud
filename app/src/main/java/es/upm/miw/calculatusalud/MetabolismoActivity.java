@@ -1,10 +1,12 @@
 package es.upm.miw.calculatusalud;
 
+import android.content.Context;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -59,6 +61,12 @@ public class MetabolismoActivity extends AppCompatActivity {
         //Escribimos el resultado
         String imc_string = "Metabolismo Basal = " + String.valueOf(mb)+" kilocalorías/día";
         resultado.setText(imc_string);
+
+        //Ocultamos el teclado
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(peso.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(estatura.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(edad.getWindowToken(), 0);
 
     }
 

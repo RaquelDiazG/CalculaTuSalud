@@ -1,8 +1,10 @@
 package es.upm.miw.calculatusalud;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -32,5 +34,8 @@ public class PesoActivity extends AppCompatActivity {
         //Escribimos el resultado
         String imc_string = "Peso ideal = " + String.valueOf(peso_ideal)+" kg";
         resultado.setText(imc_string);
+        //Ocultamos el teclado
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(estatura.getWindowToken(), 0);
     }
 }

@@ -1,9 +1,11 @@
 package es.upm.miw.calculatusalud;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -74,5 +76,10 @@ public class CaloriasActivity extends AppCompatActivity {
         //Escribimos el resultado
         String imc_string = "Calorías diarias = " + String.valueOf(calorias);
         resultado.setText(imc_string);
+        //Ocultamos el teclado
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(peso.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(estatura.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(edad.getWindowToken(), 0);
     }
 }

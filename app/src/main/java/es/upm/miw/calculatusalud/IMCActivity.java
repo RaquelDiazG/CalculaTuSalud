@@ -1,8 +1,10 @@
 package es.upm.miw.calculatusalud;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -52,7 +54,12 @@ public class IMCActivity extends AppCompatActivity {
         } else if (imc >= 40.00) {
             imc_string += "Obeso: Tipo III";
         }
-
         resultado.setText(imc_string);
+
+        //Ocultamos el teclado
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(peso.getWindowToken(), 0);
+        imm.hideSoftInputFromWindow(estatura.getWindowToken(), 0);
+
     }
 }
