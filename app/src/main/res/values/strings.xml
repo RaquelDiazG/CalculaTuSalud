@@ -10,4 +10,14 @@
     <string name="txt_sexo_hombre">Hombre</string>
     <string name="txt_sexo_mujer">Mujer</string>
     <string name="txt_calcular">Calcular</string>
+
+    <string-array
+        name="actividad_fisica_array">
+        <item>Seleccione el tipo de actividad física</item>
+        <item>Poco o ningún ejercicio</item>
+        <item>Ejercicio ligero (1-3 días a la semana)</item>
+        <item>Ejercicio moderado (3-5 días a la semana)</item>
+        <item>Ejercicio fuerte (6-7 días a la semana)</item>
+        <item>Ejercicio muy fuerte (dos veces al día, entrenamientos muy duros)</item>
+    </string-array>
 </resources>
