@@ -23,7 +23,8 @@
         android:id="@+id/input_estatura"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:hint=""
+        android:ems="10"
+        android:inputType="numberDecimal"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
